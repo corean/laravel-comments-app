@@ -1,43 +1,43 @@
-.markdown  * {
-
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 [x-cloak] {
     display: none !important;
- }
-
-.markdown h2{
- font-size: 2rem;
- font-weight: 700;
- margin-bottom: 1rem;
- display: block;
 }
 
-.markdown code{
-    padding:  0.2rem 0.5rem;
+.markdown h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.markdown code {
+    padding: 0.2rem 0.5rem;
     margin: 1rem 0;
     background-color: #f3f4f6;
     border-radius: 0.375rem;
     display: inline;
 }
 
-.markdown .shiki code{
-    padding:  0.5rem 1rem;
+.markdown .shiki code {
+    padding: 0.5rem 1rem;
     display: block;
 }
 
 
-.markdown ol{
-    list-style-type:decimal;
+.markdown ol {
+    list-style-type: decimal;
     padding-left: 2rem;
 }
 
-.markdown ul{
-    list-style-type:disc;
+.markdown ul {
+    list-style-type: disc;
     padding-left: 2rem;
 }
 
-.markdown a{
+.markdown a {
     color: #666666;
     text-decoration: underline;
 }
