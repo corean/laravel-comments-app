@@ -38,6 +38,13 @@ return new class extends Migration
         });
     }
 
+    public function down()
+    {
+        Schema::dropIfExists('comments');
+        Schema::dropIfExists('reactions');
+        Schema::dropIfExists('comment_notification_subscriptions');
+    }
+
     protected function nullableMorphs(Blueprint $table, string $name, string $indexName): void
     {
         $table->string("{$name}_type")->nullable();
